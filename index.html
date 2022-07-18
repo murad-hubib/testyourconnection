@@ -221,40 +221,6 @@
                                 <h5>Connection to Servers</h5>
 
                                 <div id="ServerAuthTemplateListViewGridBlock">
-                                    <table>
-                                        <tbody>
-                                        <tr>
-                                            <td>LMS:</td>
-                                            <td>OK</td>
-                                            <td>https://academy.mckinseyaccelerate.com/learn</td>
-                                            <td> 0.02 sec.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Video provider:</td>
-                                            <td>OK</td>
-                                            <td>https://edge.api.brightcove.com</td>
-                                            <td> 0.02 sec.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Content provider:</td>
-                                            <td>OK</td>
-                                            <td>https://login.elucidat.com</td>
-                                            <td> 0.34 sec.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>US-EAST-1</td>
-                                            <td>OK</td>
-                                            <td>https://healthcheck-useast1.s3.amazonaws.com</td>
-                                            <td> 0.06 sec.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EU-WEST-1</td>
-                                            <td>OK</td>
-                                            <td>https://healthcheck-euwest1.s3.eu-west-1.amazonaws.com</td>
-                                            <td> 0.38 sec.</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -324,25 +290,6 @@
 <script src="static/js/clipboard.min.js"></script>
 <script src="static/js/ua-parser.min.js"></script>
 <script type="text/javascript">
-
-    var server_details = {
-        'mckinseyaccelerate_endpoint': 'https://academy.mckinseyaccelerate.com/learn',
-        'accelerate_response_status': 'OK',
-        'accelerate_response_time': 0.02,
-        'brightcove_endpoint': 'https://edge.api.brightcove.com',
-        'brightcove_response_status': 'OK',
-        'brightcove_response_time': 0.02,
-        'elucidat_endpoint': 'https://login.elucidat.com',
-        'elucidat_response_status': 'OK',
-        'elucidat_response_time': 0.34,
-        'us_east_1_endpoint': 'https://healthcheck-useast1.s3.amazonaws.com',
-        'us_east_1_response_status': 'OK',
-        'us_east_1_response_time': 0.06,
-        'eu_west_1_endpoint': 'https://healthcheck-euwest1.s3.eu-west-1.amazonaws.com',
-        'eu_west_1_response_status': 'OK',
-        'eu_west_1_response_time': 0.38
-    };
-    var connection_release = "v3";
     var date = new Date();
     var parser = new UAParser();
     var result = parser.getResult();
@@ -386,7 +333,6 @@
     result['local_time'] = date.toString();
     result['local_storge'] = local_storage;
     result['session_storge'] = session_storage;
-    result['server_details'] = server_details;
 
     function enableCopyButton() {
         var copyBtn = $('.copy-access-key');
@@ -448,7 +394,44 @@
         el.setAttribute("download", "testconnection.json");
     }
 
+    function fetchServerDetails(url){
+        return new Promise(function(resolve, reject) {
+            $.ajax({
+                method: 'GET',
+                url: url,
+                dataType: 'json',
+            })
+            .done(function(data, textStatus, xhr) {
+                if (xhr.status === 200)
+                {
+                    if (data['statusCode'] == 200)
+                    {
+                        server_details = $.parseJSON(data['body']);
+
+                        server_txt = "<table><tbody>";
+                        server_txt+= "<tr><td>LMS:</td><td>" + server_details.accelerate_response_status + "</td><td>"+ server_details.mckinseyaccelerate_endpoint + "</td><td>"+ server_details.accelerate_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Video provider:</td><td>" + server_details.brightcove_response_status + "</td><td>"+ server_details.brightcove_endpoint + "</td><td>"+ server_details.brightcove_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content provider:</td><td>" + server_details.elucidat_app_health_response_status + "</td><td>"+ server_details.elucidat_app_health_endpoint + "</td><td>"+ server_details.elucidat_app_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content provider api:</td><td>" + server_details.elucidat_api_health_response_status + "</td><td>"+ server_details.elucidat_api_health_endpoint + "</td><td>"+ server_details.elucidat_api_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content provider api gateway:</td><td>" + server_details.elucidat_api_gateway_health_response_status + "</td><td>"+ server_details.elucidat_api_gateway_health_endpoint + "</td><td>"+ server_details.elucidat_api_gateway_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>US-EAST-1:</td><td>" + server_details.us_east_1_response_status + "</td><td>"+ server_details.us_east_1_endpoint + "</td><td>"+ server_details.us_east_1_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>EU-WEST-1:</td><td>" + server_details.eu_west_1_response_status + "</td><td>"+ server_details.eu_west_1_endpoint + "</td><td>"+ server_details.eu_west_1_response_time + " sec." + "</td>";
+                        document.getElementById("ServerAuthTemplateListViewGridBlock").innerHTML=server_txt;
+                        result['server_details'] = server_details;
+                    }
+                }
+                resolve(data);
+            })
+            .fail(function(data) {
+                console.log('Ajax failed to fetch data');
+                console.log(data);
+                reject(data);
+            });
+        });
+    }
+
     $(document).ready(function () {
+        fetchServerDetails('https://q9rhxh2zc3.execute-api.us-east-1.amazonaws.com/v1/servers-health');
         enableCopyButton();
 
         $('#sc-container').on('click', '#sc-start-button, #sc-details-button', function () {
@@ -461,10 +444,6 @@
                 }
             }, 100);
         });
-
-        if (connection_release === 'v2') {
-            backendSpeedTestDownloader();
-        }
     });
 </script>
 
