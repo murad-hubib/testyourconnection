@@ -77,7 +77,8 @@
 
     </script>
 
-    <link rel="stylesheet" href="static/css/packed_core_v2.css" class="pony">
+    <link rel="stylesheet" href="static/css/connection.css" class="pony">
+
 
     <script>
         var variables = {
@@ -145,12 +146,6 @@
     <meta name="msapplication-config" content="static/favicons/browserconfig.xml">
 
 
-    <link rel="stylesheet" href="static/css/apros-xblocks.css" class="pony">
-
-
-    <link rel="stylesheet" href="static/css/ltr_v2.css">
-
-
     <script src="static/js/jquery.min.js"></script>
 </head>
 <body style="display: block;" class="site-wrapper ltr     new-theme" data-new-gr-c-s-check-loaded="14.1067.0"
@@ -178,6 +173,12 @@
 
 
 <main role="main" class="fadeIn animated delay-1s">
+    <div class="preloader" id="overlayer">
+        <div class="lds-ring">
+            <div></div><div></div><div></div><div></div>
+        </div>
+        <p>Just a moment. We are preparing your data.</p>
+    </div>
     <div class="container">
         <div class="row connectionWrap">
             <div class="col-lg-12 static-page">
@@ -250,7 +251,7 @@
                                         </div>
                                     </div>
                                     <script async src="https://cdn.speedcheck.org/basic/scbjs.min.js"></script>
-
+                                    <p class="disclaimer-text"><i><b>Disclaimer:</b> As operators of this site, we take the protection of your personal information very seriously.</i></p>
                                 </div>
                             </div>
                         </div>
@@ -421,11 +422,16 @@
                     }
                 }
                 resolve(data);
+                // $("#overlayer").delay(2000).css("display", "none");
+                $("#overlayer").css("display", "none");
+
             })
             .fail(function(data) {
                 console.log('Ajax failed to fetch data');
                 console.log(data);
                 reject(data);
+                // $("#overlayer").delay(2000).css("display", "none");
+                $("#overlayer").css("display", "none");
             });
         });
     }
