@@ -19,7 +19,6 @@
           content="McKinsey Academy helps organizations thrive by accelerating their talent advantage">
 
     <script src="static/js/css-vars-ponyfill.js"></script>
-    <script src="static/js/custom.js"></script>
     <style type="text/css">
         :root {
 
@@ -78,7 +77,7 @@
 
     </script>
 
-    <link rel="stylesheet" href="static/css/packed_core_v2.css" class="pony">
+    <link rel="stylesheet" href="static/css/connection.css" class="pony">
 
 
     <script>
@@ -423,11 +422,16 @@
                     }
                 }
                 resolve(data);
+                // $("#overlayer").delay(2000).css("display", "none");
+                $("#overlayer").css("display", "none");
+
             })
             .fail(function(data) {
                 console.log('Ajax failed to fetch data');
                 console.log(data);
                 reject(data);
+                // $("#overlayer").delay(2000).css("display", "none");
+                $("#overlayer").css("display", "none");
             });
         });
     }

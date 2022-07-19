@@ -1007,7 +1007,6 @@ footer .footerLinks {
     overflow: hidden;
 }
 .preloader {
-    display: none;
     position: absolute;
     left: 0;
     top: -31px;
@@ -1195,9 +1194,9 @@ footer .footerLinks {
 .static-page #browserInfoListViewGridBlock table,.static-page #speedTestTemplateListViewGridBlock table,.static-page #ServerAuthTemplateListViewGridBlock table{
     width:100%
 }
-#ServerAuthTemplateListViewGridBlock table tr td:nth-child(2) {
-    color: var(--green);
-}
+/*#ServerAuthTemplateListViewGridBlock table tr td:nth-child(2) {*/
+/*    color: var(--green);*/
+/*}*/
 #ServerAuthTemplateListViewGridBlock table tr td:nth-child(3) {
     word-break: break-all;
 }
@@ -1417,4 +1416,8 @@ footer ul li:first-child a:before{
     padding-left: 0;
     margin-bottom: 0;
     list-style: none
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
