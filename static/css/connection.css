@@ -1,68 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-
-
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:300;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:300;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:400;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:400;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:600;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:600;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:700;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:700;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.ttf") format("truetype")
-}
-
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
 
 /*!* Bootstrap v4.2.1(https://getbootstrap.com/) * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter,Inc. * Licensed under MIT(https://github.com/twbs/bootstrap/blob/master/LICENSE) */
  :root{
