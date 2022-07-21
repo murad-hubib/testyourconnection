@@ -69,8 +69,17 @@ body{
     background-color:#fff
 }
 main{
+    min-height: calc(100vh - 262px);
+    margin-top: 30px;
     position: relative;
 }
+
+@media(max-width: 767.98px) {
+    main {
+        min-height: calc(100vh - 56px);
+    }
+}
+
 .container{
     width:100%;
     padding-right:15px;
@@ -78,6 +87,38 @@ main{
     margin-right:auto;
     margin-left:auto
 }
+
+.text-center {
+    text-align: center!important;
+}
+/*Error pages Styles*/
+.errorContWrap {
+    padding: 30px;
+    color: #696969;
+}
+.errorContWrap .icon {
+    margin-bottom: 15px;
+}
+.errorContWrap .icon i {
+    font-size: 3.55rem;
+}
+.errorContWrap .errorText {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000000;
+}
+.errorContWrap .errorText h4 {
+    margin: 0;
+    text-align: center;
+}
+.errorContWrap .content p {
+    text-align: center;
+    margin: 6px 0 0;
+}
+.errorContWrap .content p:first-child {
+    margin: 0;
+}
+
 @media(min-width:576px){
     .container{
         max-width:540px
