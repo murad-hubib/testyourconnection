@@ -1,68 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
 
-
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:300;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Light-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:300;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-LightItalic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:400;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Regular-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:400;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Italic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:600;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Semibold-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:600;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-SemiboldItalic-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:normal;
-    font-weight:700;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-Bold-webfont.ttf") format("truetype")
-}
-@font-face{
-    font-family:"Open Sans";
-    font-style:italic;
-    font-weight:700;
-    src:url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.woff2") format("woff2"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.woff") format("woff"),url("../../edx-pattern-library/fonts/OpenSans/OpenSans-BoldItalic-webfont.ttf") format("truetype")
-}
-
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700i");
 
 /*!* Bootstrap v4.2.1(https://getbootstrap.com/) * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter,Inc. * Licensed under MIT(https://github.com/twbs/bootstrap/blob/master/LICENSE) */
  :root{
@@ -122,7 +71,17 @@ body{
 }
 main{
     position: relative;
+    min-height: calc(100vh - 262px);
+    margin-top: 30px;
+    position: relative;
 }
+
+@media(max-width: 767.98px) {
+    main {
+        min-height: calc(100vh - 56px);
+    }
+}
+
 .container{
     width:100%;
     padding-right:15px;
@@ -130,6 +89,38 @@ main{
     margin-right:auto;
     margin-left:auto
 }
+
+.text-center {
+    text-align: center!important;
+}
+/*Error pages Styles*/
+.errorContWrap {
+    padding: 30px;
+    color: #696969;
+}
+.errorContWrap .icon {
+    margin-bottom: 15px;
+}
+.errorContWrap .icon i {
+    font-size: 3.55rem;
+}
+.errorContWrap .errorText {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000000;
+}
+.errorContWrap .errorText h4 {
+    margin: 0;
+    text-align: center;
+}
+.errorContWrap .content p {
+    text-align: center;
+    margin: 6px 0 0;
+}
+.errorContWrap .content p:first-child {
+    margin: 0;
+}
+
 @media(min-width:576px){
     .container{
         max-width:540px
@@ -996,6 +987,7 @@ footer .footerLinks {
     animation-delay:1s;
     animation-delay:1s
 }
+
 .lds-ring {
   position: absolute;
   top: 30vh;
@@ -1013,7 +1005,7 @@ footer .footerLinks {
     right: 0;
     bottom: -96px;
     content: '';
-    background: #2042cb;
+    background: white;
     z-index: 1;
 }
 .preloader p {
@@ -1047,6 +1039,93 @@ footer .footerLinks {
   animation-delay: -0.15s;
 }
 @keyframes lds-ring {
+=======
+    top: calc(30vh + 100px);
+    left: calc(50% - 180px);
+    width: 360px;
+    text-align: center;
+    color: #555;
+    font-weight: 400;
+    font-size: .9rem;
+}
+.lds-roller {
+  position: absolute;
+  left: calc(50% - 40px);
+  top: 30vh;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2042cb;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
   0% {
     transform: rotate(0deg);
   }
@@ -1197,6 +1276,11 @@ footer .footerLinks {
 #ServerAuthTemplateListViewGridBlock table tr td:nth-child(2) {
     color: var(--green);
 }
+
+/*#ServerAuthTemplateListViewGridBlock table tr td:nth-child(2) {*/
+/*    color: var(--green);*/
+/*}*/
+
 #ServerAuthTemplateListViewGridBlock table tr td:nth-child(3) {
     word-break: break-all;
 }
