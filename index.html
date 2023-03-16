@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row connectionWrap">
             <div class="col-lg-12 static-page">
-                <h1>Test Your Connection</h1>
+                <h2>Test Your Connection</h2>
                 <div id="mainCertificatesTemplateListContainer">
                     <div class="activation_link" id="certificatesTemplateListTitle">
                         <p>Having trouble? We're running automated tests below to figure out what's wrong.</p>
@@ -200,11 +200,12 @@
                     <div class="row" id="mainCertificatesTemplateListGridContainer">
                         <div class="col-lg-7">
                             <div class="wrapBox" id="mainBrowserInfoTemplateListGridWrapper">
-                                <h5>Browser Information</h5>
+                                <h3>Browser Information</h3>
 
                                 <div id="browserInfoListViewGridBlock">
                                     <table>
                                         <tbody id="browserInfo-tbody">
+                                        <tr><th>Title</th><th>Value</th></tr>
                                         <tr>
                                             <td>Cookies Enabled:</td>
                                             <td id="cookie-result"></td>
@@ -213,17 +214,19 @@
                                 </div>
                                 <iframe src="https://checkcookie-3rdparty.s3.amazonaws.com/start.html"
                                         style="display:none"></iframe>
-                            </div>
-                            <div class="wrapBox" id="mainServerAuthTemplateListGridWrapper">
-                                <h5>Connection to Servers</h5>
 
-                                <div id="ServerAuthTemplateListViewGridBlock">
+                                <div class="" id="mainServerAuthTemplateListGridWrapper">
+                                    <h3>Connection to Servers</h3>
+
+                                    <div id="ServerAuthTemplateListViewGridBlock">
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="col-lg-5">
                             <div class="wrapBox" id="mainSpeedTestTemplateListGridWrapper">
-                                <h5>Speed Test</h5>
+                                <h3>Speed Test</h3>
 
                                 <div id="speedTestTemplateListViewGridBlock">
 
@@ -406,11 +409,12 @@
                         server_details = $.parseJSON(data['body']);
 
                         server_txt = "<table><tbody>";
+                        server_txt+= "<tr><th>Service name</th><th>Status</th><th>Response Time</th></tr>";
                         server_txt+= "<tr><td>LMS:</td><td>" + server_details.accelerate_response_status + "</td><td>"+ server_details.accelerate_response_time + " sec." + "</td>";
-                        server_txt+= "<tr><td>Video provider:</td><td>" + server_details.brightcove_response_status + "</td><td>"+ server_details.brightcove_response_time + " sec." + "</td>";
-                        server_txt+= "<tr><td>Content provider:</td><td>" + server_details.elucidat_app_health_response_status + "</td><td>"+ server_details.elucidat_app_health_response_time + " sec." + "</td>";
-                        server_txt+= "<tr><td>Content provider api:</td><td>" + server_details.elucidat_api_health_response_status + "</td><td>"+ server_details.elucidat_api_health_response_time + " sec." + "</td>";
-                        server_txt+= "<tr><td>Content provider gateway:</td><td>" + server_details.elucidat_api_gateway_health_response_status + "</td><td>"+ server_details.elucidat_api_gateway_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Video streaming platform:</td><td>" + server_details.brightcove_response_status + "</td><td>"+ server_details.brightcove_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content streaming platform:</td><td>" + server_details.elucidat_app_health_response_status + "</td><td>"+ server_details.elucidat_app_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content streaming platform api:</td><td>" + server_details.elucidat_api_health_response_status + "</td><td>"+ server_details.elucidat_api_health_response_time + " sec." + "</td>";
+                        server_txt+= "<tr><td>Content streaming platform gateway:</td><td>" + server_details.elucidat_api_gateway_health_response_status + "</td><td>"+ server_details.elucidat_api_gateway_health_response_time + " sec." + "</td>";
                         server_txt+= "<tr><td>US-EAST-1:</td><td>" + server_details.us_east_1_response_status + "</td><td>"+ server_details.us_east_1_response_time + " sec." + "</td>";
                         server_txt+= "<tr><td>EU-WEST-1:</td><td>" + server_details.eu_west_1_response_status + "</td><td>"+ server_details.eu_west_1_response_time + " sec." + "</td>";
                         document.getElementById("ServerAuthTemplateListViewGridBlock").innerHTML=server_txt;

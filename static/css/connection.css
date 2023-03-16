@@ -70,7 +70,7 @@ body{
 }
 main{
     min-height: calc(100vh - 262px);
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -144,11 +144,12 @@ main{
 }
 h1,h2,h3,h4,h5,h6{
     margin-top:0;
-    margin-bottom:.5rem
+    margin-bottom:0;
 }
 p{
     margin-top:0;
-    margin-bottom:1rem
+    margin-bottom:6px;
+    font-size: 13px;
 }
 b,strong{
     font-weight:bolder
@@ -214,7 +215,6 @@ button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-
     border-style:none
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-    margin-bottom:.5rem;
     font-family:inherit;
     font-weight:500;
     line-height:1.2;
@@ -233,7 +233,7 @@ h5,.h5{
     background-color:transparent;
     border:1px solid transparent;
     padding:.375rem .75rem;
-    font-size:1rem;
+    font-size:13px;
     line-height:1.5;
     border-radius:.25rem;
     transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
@@ -354,7 +354,7 @@ header {
         background-color: transparent !important;
         color: #000000; }
   header.appHeader {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     border-bottom-color: #cccccc; }
     header.appHeader .dropdown-menu {
       top: 35px !important; }
@@ -929,19 +929,27 @@ footer .footerLinks {
 
 
 .connectionWrap .wrapBox{
-    padding-top:32px;
-    margin-top:32px;
+    padding-top:24px;
+    margin-top:24px;
     background:#fff;
     -webkit-box-shadow:2px 2px 6px 1px rgba(0,0,0,0.08);
     box-shadow:2px 2px 6px 1px rgba(0,0,0,0.08);
-    padding:32px
+    padding: 15px 24px;
 }
-.connectionWrap .wrapBox h5{
-    margin-bottom:22px
+.connectionWrap .wrapBox h3{
+    margin-bottom:10px
+}
+.connectionWrap table{
+  font-size: 13px;
+}
+.connectionWrap .wrapBox table tbody th{
+  padding: 4px 8px;
+  border:1px solid #EBEBEB;
+  background-color: #eee;
 }
 .connectionWrap .wrapBox table tbody td{
     vertical-align:top;
-    padding:8px;
+    padding:4px 8px;
     color:#4a4a4a;
     border:1px solid #EBEBEB
 }
@@ -1100,7 +1108,7 @@ footer .footerLinks {
     font-family:"Open Sans",sans-serif !important;
 }
 .static-page #mainCertificatesTemplateListContainer #certificateTemplateCreateButton{
-    margin-top:18px
+    margin-top:12px
 }
 .static-page #mainCertificatesTemplateListContainer #certificateTemplateCreateButton>button{
     background:transparent
@@ -1121,6 +1129,10 @@ footer .footerLinks {
     background:#333;
     opacity:1!important
 }
+
+.static-page #mainServerAuthTemplateListGridWrapper {
+  margin-top: 20px;
+}
 @media only screen and (min-width:34.286em){
     .static-page #mainCertificatesTemplateListContainer #certificateTemplateCreateButton .tooltip>.nub{
         border-color:transparent transparent #333 transparent;
@@ -1135,7 +1147,7 @@ footer .footerLinks {
     height:0
 }
 .static-page #mainSpeedTestTemplateListGridWrapper{
-    min-height:calc(100% - 30px)
+/*    min-height:calc(100% - 30px);*/
 }
 .static-page #mainCertificatesTemplateListGridContainer{
     display:flex
@@ -1194,7 +1206,7 @@ footer .footerLinks {
     display: inline-block;
 }
 .static-page #speedTestTemplateListViewGridBlock .sc-title>.sc-value{
-    font-size:15px;
+    font-size:14px;
     font-weight:bold;
     color:#84919b!important;
 }
@@ -1239,6 +1251,9 @@ footer .footerLinks {
 /*}*/
 #ServerAuthTemplateListViewGridBlock table tr td:nth-child(3) {
     word-break: break-all;
+}
+#ServerAuthTemplateListViewGridBlock table tr td:first-child {
+    max-width: 55%;
 }
 @media(max-width:767.98px){
     .static-page #browserInfoListViewGridBlock table tr td,.static-page #speedTestTemplateListViewGridBlock table tr td,.static-page #ServerAuthTemplateListViewGridBlock table tr td{
